@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Engineering System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prompt Engineering System</h1>
+        <form method="POST">
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" required>
+            <label for="scenarios">Scenarios:</label>
+            <textarea id="scenarios" name="scenarios"></textarea>
+            <button type="submit">Generate Prompts</button>
+        </form>
+        {% if prompts %}
+            <h2>Generated Prompts</h2>
+            <ul>
+                {% for prompt in prompts %}
+                    <li>{{ prompt }}</li>
+                {% endfor %}
+            </ul>
+            <h2>Evaluations</h2>
+            <ul>
+                {% for evaluation in evaluations %}
+                    <li>{{ evaluation }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
