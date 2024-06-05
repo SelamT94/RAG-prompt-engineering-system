@@ -1,0 +1,7 @@
+{
+    "prompts": [
+        "This is an example description - Scenario: Example scenario 1",
+        "This is an example description - Scenario: Example scenario 2"
+    ],
+    "evaluations": [0.75, 0.85]
+}

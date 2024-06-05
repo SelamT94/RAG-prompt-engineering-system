@@ -1,0 +1,4 @@
+{
+    "description": "This is an example description",
+    "scenarios": ["Example scenario 1", "Example scenario 2"]
+}

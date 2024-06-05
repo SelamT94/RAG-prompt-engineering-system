@@ -1,26 +1,3 @@
-# RAG-prompt-engineering-system
-
-
-## Overview
-This project focuses on the evolution of automatic prompt engineering for Language Models (LLMs), with an emphasis on Retrieval-Augmented Generation (RAG) systems. It includes modules for prompt generation, RAG integration, evaluation, and a user-friendly interface.
-
-## Setup
-1. Clone the repository.
-2. Install the necessary dependencies.
-   ```bash
-   pip install -r requirements.txt
-
-Usage
-Input a description and scenarios via the UI.
-Generate multiple prompt options.
-Evaluate and rank the prompts using the integrated evaluation system.
-
-
-License
-MIT License
-
-#### `docs/architecture.md`
-```markdown
 # System Architecture
 
 ## Overview
