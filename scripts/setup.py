@@ -7,7 +7,12 @@ setup(
     include_package_data=True,
     install_requires=[
         'Flask',
-        # Add other dependencies here
+        'datasets',
+        'pinecone-client',
+        'langchain',
+        'tqdm',
+        'pandas',
+        'openai',  # Ensure you have the necessary packages
     ],
     entry_points={
         'console_scripts': [
