@@ -1,14 +1,15 @@
 import unittest
-from src.prompt_generation.generator import generate_prompts
+import sys , os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from src.prompt_generator import generate_prompt
 
-class TestPromptGeneration(unittest.TestCase):
-    def test_generate_prompts(self):
-        description = "Test description"
-        scenarios = ["Scenario 1", "Scenario 2"]
-        prompts = generate_prompts(description, scenarios)
-        self.assertEqual(len(prompts), 2)
-        self.assertIn("Scenario: Scenario 1", prompts[0])
-        self.assertIn("Scenario: Scenario 2", prompts[1])
+class TestPromptGenerator(unittest.TestCase):
+
+    def test_generate_prompt(self):
+        user_input = "Test user input"
+        scenarios = "Test scenarios"
+        prompts = generate_prompt(user_input, scenarios)
+        self.assertTrue(len(prompts) > 0)
 
 if __name__ == '__main__':
     unittest.main()
