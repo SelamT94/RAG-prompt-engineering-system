@@ -12,8 +12,8 @@ setup(
         'langchain',
         'tqdm',
         'pandas',
-        'openai',  # Ensure you have the necessary packages
-    ],
+        'openai' 
+        ],
     entry_points={
         'console_scripts': [
             'prompt-engineering-system=src.main:main',

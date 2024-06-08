@@ -11,7 +11,10 @@ def create_app():
             description = request.form['description']
             scenarios = request.form.getlist('scenarios')
             prompts = generate_prompts(description, scenarios)
-            # Evaluate and rank prompts here
+            # Evaluate and rank prompts 
+
+
+            
             evaluations = [evaluate_prompt(prompt, []) for prompt in prompts]
             return render_template('index.html', prompts=prompts, evaluations=evaluations)
         return render_template('index.html')
